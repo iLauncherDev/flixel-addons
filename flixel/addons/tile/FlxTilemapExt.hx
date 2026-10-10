@@ -253,7 +253,7 @@ class FlxTilemapExt extends FlxTilemap
 						matrixToUse.translate(drawX, drawY);
 						camera.drawPixels(frame, matrixToUse, colorTransform, blend);
 
-						drawItem.addQuad(frame, matrixToUse, colorTransform);
+						drawItem.addQuad(frame, matrixToUse, camera.getNextDrawOrder(), colorTransform);
 					}
 				}
 

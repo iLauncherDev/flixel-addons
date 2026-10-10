@@ -365,7 +365,7 @@ class FlxBackdrop extends FlxSprite
 				}
 				else
 				{
-					drawItem.addQuad(frame, _tileMatrix, colorTransform);
+					drawItem.addQuad(frame, _tileMatrix, camera.getNextDrawOrder(), colorTransform);
 				}
 			}
 		}
